@@ -1,0 +1,12 @@
+<div class="quadro">
+  <div class="conteudos">
+    <div class="wrapConteudo">
+      <div id="areaConteudos" class="mobile-content">
+        <div class="home-conteudos">
+          <router-outlet *ngIf="!htmlContent"></router-outlet>
+        </div>
+      </div>
+    </div>
+    <app-spinner></app-spinner>
+  </div>
+</div>

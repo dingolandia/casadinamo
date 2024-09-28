@@ -1,0 +1,23 @@
+html,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+
+.quadro {
+  min-width: 996px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.conteudos {
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .quadro {
+    min-width: auto;
+    width: auto;
+  }
+}

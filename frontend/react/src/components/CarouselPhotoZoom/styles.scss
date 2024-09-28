@@ -1,0 +1,34 @@
+.swiper-dinamo-carousel{
+    .swiper-wrapper{
+        margin-bottom: 10px;
+        .swiper-slide{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        }
+        .swiper-slide-thumb-active{
+        border: solid 3px #747474;
+        }
+    }
+}
+.swiper-dinamo {
+  .swiper-wrapper {
+    .swiper-slide {
+      border: solid 3px #ccc;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+    .swiper-slide-thumb-active {
+      border: solid 3px #747474;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loja_marcas",
+  "info": {
+    "singularName": "loja-marca",
+    "pluralName": "loja-marcas",
+    "displayName": "LojaMarca"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "descricao": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "lojas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::loja.loja",
+      "mappedBy": "loja_marca"
+    }
+  }
+}

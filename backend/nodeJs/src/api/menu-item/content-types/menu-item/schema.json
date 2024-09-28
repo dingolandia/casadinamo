@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "menuItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ordem": {
+      "type": "integer"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean"
+    },
+    "tipo_link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-link.tipo-link"
+    },
+    "conteudo": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::conteudo.conteudo",
+      "inversedBy": "menu_items"
+    }
+  }
+}

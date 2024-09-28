@@ -1,0 +1,31 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+  outline-offset: none;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.container-prod-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoProduto {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  min-height: 400px;
+  border-radius: 20px;
+  padding: 8px;
+}
+.ad-gallery {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
