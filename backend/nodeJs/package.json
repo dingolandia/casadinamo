@@ -14,7 +14,9 @@
     "@strapi/plugin-i18n": "4.14.4",
     "@strapi/plugin-users-permissions": "4.14.4",
     "@strapi/strapi": "4.14.4",
-    "mysql2": "^3.11.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.4",
+    "ssh2": "^1.16.0",
     "strapi-plugin-transformer": "^3.1.2"
   },
   "author": {

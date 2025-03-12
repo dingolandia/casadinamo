@@ -4,8 +4,11 @@
         <h2 class="cor-preco">{{currencyFormat( (itemShop ? itemShop.preco : 0), "pt-BR", "BRL")}}</h2>
       </div>
       <div class="corpoItemLoja">
-          <img src={{fullUrl}} alt={{itemShop?.tituloProduto}} />
-      </div>
+        <img 
+            [src]="filesPath + (itemShop?.media?.[0]?.url ?? '')" 
+            [alt]="itemShop?.tituloProduto ?? 'Título indefinido'" 
+        />
+    </div>
       <div class="precoItemLoja">{{itemShop?.tituloProduto}}</div>
       <div class="rodapeItemLoja">&nbsp;</div>
     </div>

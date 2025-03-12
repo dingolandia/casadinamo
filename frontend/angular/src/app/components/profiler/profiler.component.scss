@@ -1,0 +1,22 @@
+$graycolor: #ccc;
+
+.container {
+    display: flex;
+    width: 100%;
+    border: 1px solid $graycolor;
+    box-sizing: border-box;
+    gap: 0;
+
+    &>* {
+        padding: 7px;
+    }
+
+    .col1 {
+        width: 200px;
+    }
+
+    .col2 {
+        flex: 1;
+        border-left: 1px solid $graycolor;
+    }
+}

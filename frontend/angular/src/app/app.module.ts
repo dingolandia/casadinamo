@@ -33,7 +33,7 @@ import { DialogBoxComponent } from './components/dialog-box/dialog-box.component
 import { UserLoginComponent } from './components/forms/user-login/user-login.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { CookieService } from 'ngx-cookie-service';
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
@@ -44,6 +44,8 @@ import { Routes } from '@angular/router';
 import { ApiInterceptor } from './interceptors/api.interceptor';
 import { ProfilerComponent } from './components/profiler/profiler.component';
 import { OrderListComponent } from './pages/user/order-list/order-list.component';
+import { AddressComponent } from './pages/user/address/address.component';
+import { SecurityComponent } from './pages/user/security/security.component';
 
 export function initializeApp(routerInitService: RouteInitService) {
   return (): Promise<Routes> => {
@@ -72,6 +74,8 @@ export function initializeApp(routerInitService: RouteInitService) {
     UserSignupComponent,
     ProfilerComponent,
     OrderListComponent,
+    AddressComponent,
+    SecurityComponent,
   ],
   imports: [
     NgxSpinnerModule,
@@ -86,6 +90,7 @@ export function initializeApp(routerInitService: RouteInitService) {
     MatMenuModule,
     MatButtonModule,
     MatFormFieldModule,
+    FormsModule,
     MatInputModule,
     ReactiveFormsModule,
     MatIconModule,

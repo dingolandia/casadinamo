@@ -1,5 +1,9 @@
+<div>
+  Barra de pesquisa
+</div>
+
 <div class="shopping">
-    <app-shopping
-      [itemShop]="itemShop"
+    <app-shopping *ngFor="let item of items"
+      [itemShop]="item"
     />
 </div>

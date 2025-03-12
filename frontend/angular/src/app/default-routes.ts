@@ -10,6 +10,8 @@ import { UserSignupComponent } from './components/forms/user-signup/user-signup.
 import { OrderListComponent } from './pages/user/order-list/order-list.component';
 import { ProfilerComponent } from './components/profiler/profiler.component';
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
+import { AddressComponent } from './pages/user/address/address.component';
+import { SecurityComponent } from './pages/user/security/security.component';
 
 export const defaultRoutes: Routes = [
   {
@@ -69,8 +71,20 @@ export const defaultRoutes: Routes = [
       {
         path: 'pedidos',
         component: OrderListComponent,
-        data: { titleText: 'Pedidos do usuário' },
-        title: 'Perfil do usuário',
+        data: { titleText: 'Dados do usuário' },
+        title: 'Pedidos do usuário',
+      },
+      {
+        path: 'enderecos',
+        component: AddressComponent,
+        data: { titleText: 'Dados do usuário' },
+        title: 'Endereços de entrega',
+      },
+      {
+        path: 'seguranca',
+        component: SecurityComponent,
+        data: { titleText: 'Dados do usuário' },
+        title: 'Autenticação',
       },
     ],
   },

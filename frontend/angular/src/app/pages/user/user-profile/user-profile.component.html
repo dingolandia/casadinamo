@@ -1,1 +1,28 @@
-<p>user-profile works!</p>
+<div class="container">
+    <div>
+        <h5 class="profile-title">{{nameTitle}}</h5>
+        <span>{{nameValue}}</span>
+        <input type="text" name="name" [placeholder]="">
+    </div>
+    <div>
+        <h5 class="profile-title">{{emailTitle}}</h5>
+        <span>{{emailValue}}</span>
+        <input type="text" name="email" [placeholder]="">
+    </div>
+    <div>
+        <h5 class="profile-title">{{genderTitle}}</h5>
+        <span>{{genderValue}}</span>
+        <input type="text" name="gender" [(ngModel)]="genderValue" [placeholder]="">
+    </div>
+    <div>
+        <h5 class="profile-title">{{documentTitle}}</h5>
+        <span>{{documentValue}}</span>
+        <input type="text" name="document" [placeholder]="">
+    </div>
+    <div>
+        <h5 class="profile-title">{{birthTitle}}</h5>
+        <span>{{birthValue}}</span>
+        <span></span>
+        <input type="text" name="birth" [placeholder]="">
+    </div>
+</div>

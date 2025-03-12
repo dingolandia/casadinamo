@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FULL_URL } from 'src/app/constants/constants';
+import { FILES_PATH, FULL_URL } from 'src/app/constants/constants';
 import { IItem } from 'src/app/models/interfaces/shop.item.interface';
 import { currencyFormat } from 'src/app/utils/formatter';
 
@@ -15,4 +15,5 @@ export class ShoppingComponent {
 
   currencyFormat = currencyFormat;
   fullUrl = FULL_URL;
+  filesPath = FILES_PATH;
 }

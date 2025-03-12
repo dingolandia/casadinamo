@@ -67,9 +67,9 @@ $RECYCLE.BIN/
 
 .tmp
 *.log
-*.sql
-*.sqlite
-*.sqlite3
+#*.sql
+#*.sqlite
+#*.sqlite3
 
 
 ############################
@@ -80,8 +80,11 @@ $RECYCLE.BIN/
 ssl
 .idea
 nbproject
-public/uploads/*
-!public/uploads/.gitkeep
+#public/uploads/*
+#!public/uploads/.gitkeep
+connection.js
+test-mysql-connection.js
+tunnel-connection.js
 
 ############################
 # Node.js

@@ -1,4 +1,5 @@
 export const FULL_URL = "http://localhost:1337";
+export const FILES_PATH = "http://localhost:1337";
 export const ECOMMERCE_TITLE = "Loja Virtual";
 export const HOME_TITLE = "Home";
 export const CATALOG_TITLE = "Catálogo";
@@ -27,3 +28,9 @@ export const MUST_HAVE_VALUE = "Você precisa preencher este campo";
 export const INVALID_EMAIL = "Email inválido";
 export const SEND = "Enviar";
 export const INVALID_DATA = "Dados inválidos";
+
+export const NAME_TITLE = "Nome";
+export const EMAIL_TITLE = "E-mail";
+export const GENDER_TITLE = "Gênero";
+export const DOCUMENT_TITLE = "Documento";
+export const BIRTH_TITLE = "Data de nascimento";
