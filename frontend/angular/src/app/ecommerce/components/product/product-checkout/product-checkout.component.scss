@@ -1,0 +1,78 @@
+.content {
+  > h1.title {
+    margin: 8px 0 8px 0;
+    padding: 0;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(210, 208, 194);
+    color: #6f6f6f;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 25px;
+  }
+  .separator {
+    clear: both;
+    padding: 9px 0;
+    border-bottom: dashed 2px #dcdcdc;
+    margin-bottom: 10px;
+  }
+
+  .price-item {
+    font-weight: bold;
+    font-size: 30px;
+    color: #c3c3c3;
+
+    &.selected {
+      color: #0784b2;
+    }
+  }
+
+  .amout-line {
+    text-align: right;
+    clear: both;
+    margin-bottom: 5px;
+
+    input {
+      width: 60px;
+      padding: 8px;
+      border-radius: 10px;
+      border: solid 1px #c6c6c6;
+      background-color: #f0f0f0;
+      line-height: 17px;
+    }
+  }
+
+  .totalCompraItem {
+    clear: both;
+    background-color: #454545;
+    text-align: right;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 20px;
+  }
+  .totalCompraItem > ul {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+  }
+  .totalCompraItem > ul > li {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+  }
+  .totalCompraItem > ul > li > input {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background: url(/ecommerce/assets/images/cart.png) 10px 2px no-repeat #005baf;
+    border: none;
+  }
+  .totalCompraItem > ul > li > input:hover {
+    background-color: #0077e4;
+  }
+  .totalCompraItem span {
+    font-size: 30px;
+    filter: drop-shadow(1px 1px 1px #4aa9ff);
+  }
+}

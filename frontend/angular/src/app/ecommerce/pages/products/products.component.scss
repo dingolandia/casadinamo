@@ -1,0 +1,43 @@
+nav, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.main-nav {
+  background-color: orange;
+  padding: 1rem;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap; // permite que os elementos quebrem linha em telas menores
+
+  .content-column {
+    flex: 1 1 50%; // cada coluna ocupa 50% do espaço
+    padding: 1rem;
+
+    // Exemplo de variação para a coluna da esquerda
+    &--left {
+      background-color: yellowgreen;
+    }
+
+    // Exemplo de variação para a coluna da direita
+    &--right {
+      background-color: yellow;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .content-column {
+    flex: 1 1 100%;
+  }
+}

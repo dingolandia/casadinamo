@@ -15,12 +15,6 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
-import { ProductsComponent } from './pages/ecommerce/pages/products/products.component';
-import { StoreComponent } from './pages/ecommerce/pages/store/store.component';
-import { NavigationBarComponent } from './pages/ecommerce/components/navigation-bar/navigation-bar.component';
-import { ProductDetailComponent } from './pages/ecommerce/components/product-detail/product-detail.component';
-import { SearchBarComponent } from './pages/ecommerce/components/search-bar/search-bar.component';
-import { ShoppingComponent } from './pages/ecommerce/components/shopping/shopping.component';
 import { P404Component } from './pages/p404/p404.component';
 import { RouteInitService } from './services/route-init.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -46,6 +40,14 @@ import { ProfilerComponent } from './components/profiler/profiler.component';
 import { OrderListComponent } from './pages/user/order-list/order-list.component';
 import { AddressComponent } from './pages/user/address/address.component';
 import { SecurityComponent } from './pages/user/security/security.component';
+import { ProductsComponent } from './ecommerce/pages/products/products.component';
+import { StoreComponent } from './ecommerce/pages/store/store.component';
+import { NavigationBarComponent } from './ecommerce/components/product/navigation-bar/navigation-bar.component';
+import { ProductDetailComponent } from './ecommerce/components/product/product-detail/product-detail.component';
+import { SearchBarComponent } from './ecommerce/components/search-bar/search-bar.component';
+import { ShoppingComponent } from './ecommerce/components/shopping/shopping.component';
+import { ProductImageCarouselComponent } from './ecommerce/components/product/product-image-carousel/product-image-carousel.component';
+import { ProductCheckoutComponent } from './ecommerce/components/product/product-checkout/product-checkout.component';
 
 export function initializeApp(routerInitService: RouteInitService) {
   return (): Promise<Routes> => {
@@ -76,6 +78,8 @@ export function initializeApp(routerInitService: RouteInitService) {
     OrderListComponent,
     AddressComponent,
     SecurityComponent,
+    ProductImageCarouselComponent,
+    ProductCheckoutComponent,
   ],
   imports: [
     NgxSpinnerModule,

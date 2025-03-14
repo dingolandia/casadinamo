@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { StoreComponent } from './pages/ecommerce/pages/store/store.component';
-import { ProductsComponent } from './pages/ecommerce/pages/products/products.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
 import { P404Component } from './pages/p404/p404.component';
 import { UserLoginComponent } from './components/forms/user-login/user-login.component';
@@ -12,6 +10,8 @@ import { ProfilerComponent } from './components/profiler/profiler.component';
 import { UserProfileComponent } from './pages/user/user-profile/user-profile.component';
 import { AddressComponent } from './pages/user/address/address.component';
 import { SecurityComponent } from './pages/user/security/security.component';
+import { StoreComponent } from './ecommerce/pages/store/store.component';
+import { ProductsComponent } from './ecommerce/pages/products/products.component';
 
 export const defaultRoutes: Routes = [
   {
