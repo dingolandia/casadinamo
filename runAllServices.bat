@@ -1,12 +1,12 @@
 @echo off
-echo =============================================
-echo Inicializando ambiente Docker MySQL...
-echo =============================================
-cd /d "%~dp0docker"
-docker-compose up -d
+REM echo =============================================
+REM echo Inicializando ambiente Docker MySQL...
+REM echo =============================================
+REM cd /d "%~dp0docker"
+REM docker-compose up -d
 
-echo Aguarde alguns segundos enquanto o MySQL inicializa...
-timeout /t 10
+REM echo Aguarde alguns segundos enquanto o MySQL inicializa...
+REM timeout /t 10
 
 echo =============================================
 echo Inicializando o Backend Strapi...
